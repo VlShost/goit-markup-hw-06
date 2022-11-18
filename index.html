@@ -390,11 +390,25 @@
                     </li>
                 </ul>
             </div>
+            <!-- <div class="thumb-foot">
+                <form class="sub-data">
+                    <label class="sub-text" for="sub">
+                        Підпишіться на розсилку
+                        <input class="sub-form" type="email" name="sub" placeholder="Email" id="sub" />
+                    </label>
+                    <button class="sub-btn" type="submit">
+                        Підписатися
+                        <svg class="sub-icon" width="24" height="24">
+                        <use href="./images/sprites.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div> -->
         </div>
     </footer>
-    <div class="backdrop is-hidde" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="btn-modal" data-modal-close>
+            <button type="button" class="btn btn-modal" data-modal-close>
                 <svg class="modal-icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
@@ -404,38 +418,37 @@
             </b>
             <form name="ticket">
                 <div class="form-field">
-                    <label for="user-name">
-                    Ім'я
+                    <label class="modal-label">
+                        Ім'я
+                        <input type="text" name="user-name" class="modal-input">
                     </label>
-                    <input type="text" name="user-name" id="user-name" class="modal-input">
                 </div>
                 <div class="form-field">
-                    <label for="user-tel" class="modal-label">
+                    <label class="modal-label">
                     Телефон
+                    <input type="tel" name="user-tel" class="modal-input">
                     </label>
-                    <input type="tel" name="user-tel" id="user-tel" class="modal-input">
                 </div>
                 <div class="form-field">
-                    <label for="user-email" class="modal-label">
+                    <label class="modal-label">
                     Пошта
+                    <input type="email" name="user-email" class="modal-input">
                     </label>
-                    <input type="email" name="user-email" id="user-email" class="modal-input">
                 </div>
                 <div class="form-field">
-                    <label for="user-comment" class="modal-label">
-                    Коментар
+                    <label class="modal-label">
+                        Коментар
+                    <textarea name="user-comment" placeholder="Введіть текст" class="user-comment modal-input" rows="8"></textarea>
                     </label>
-                    <textarea name="user-comment" id="user-comment" placeholder="Введіть текст" class="user-comment modal-input" rows="8">
-                    </textarea>
                 </div>
-                <div class="form-field">
-                    <input type="checkbox" id="checkbox">
-                    <label for="checkbox">
+                <div class="form-field checkbox-field">
+                    <label class="modal-label-checkbox">
+                        <input type="checkbox">
                         Погоджуюся з розсилкою та приймаю
                         <a href="/">Умови договору</a>
                     </label>
                 </div>
-                <button type="submit" class="btn primary">
+                <button type="submit" class="btn btn-submit">
                     <p>
                         Відправити
                     </p>
