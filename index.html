@@ -346,7 +346,7 @@
 
     <!-- footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="container footer-align">
             <div class="address-links">
                 <a href="/" class="footer logo"><span class="logo-web">Web</span>Studio</a>
             <address class="address-list">
@@ -390,26 +390,26 @@
                     </li>
                 </ul>
             </div>
-            <!-- <div class="thumb-foot">
-                <form class="sub-data">
-                    <label class="sub-text" for="sub">
+            <div class="sub-field">
+                <form class="sub-form">
+                    <label class="sub-label">
                         Підпишіться на розсилку
-                        <input class="sub-form" type="email" name="sub" placeholder="Email" id="sub" />
+                        <input class="sub-input" type="email" name="sub" placeholder="Email">
                     </label>
-                    <button class="sub-btn" type="submit">
+                    <button class="btn sub-btn" type="submit">
                         Підписатися
                         <svg class="sub-icon" width="24" height="24">
-                        <use href="./images/sprites.svg#icon-send"></use>
+                        <use href="./images/icons.svg#icon-send"></use>
                         </svg>
                     </button>
                 </form>
-            </div> -->
+            </div>
         </div>
     </footer>
-    <div class="backdrop is-hidde" data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="btn btn-modal" data-modal-close>
-                <svg class="modal-icon" width="18px" height="18px">
+                <svg class="close-icon" width="18px" height="18px">
                     <use href="./images/icons.svg#icon-close"></use>
                 </svg>
             </button>
@@ -419,32 +419,50 @@
             <form name="ticket">
                 <div class="form-field">
                     <label class="modal-label">
-                        Ім'я
-                        <input type="text" name="user-name" class="modal-input">
+                        <span class="label-text">Ім'я</span>
+                        <div class="input-wrapper">
+                            <input type="text" name="user-name" class="modal-input">
+                            <svg class="modal-icon" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-person"></use>
+                            </svg>
+                        </div>
                     </label>
                 </div>
                 <div class="form-field">
                     <label class="modal-label">
-                    Телефон
-                    <input type="tel" name="user-tel" class="modal-input">
+                        <span class="label-text">Телефон</span>                    
+                    <div class="input-wrapper">
+                        <input type="tel" name="user-tel" class="modal-input">
+                        <svg class="modal-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
                     </label>
                 </div>
                 <div class="form-field">
                     <label class="modal-label">
-                    Пошта
-                    <input type="email" name="user-email" class="modal-input">
+                        <span class="label-text">Пошта</span>                    
+                    <div class="input-wrapper">
+                        <input type="email" name="user-email" class="modal-input">
+                        <svg class="modal-icon" width="18px" height="18px">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
                     </label>
                 </div>
                 <div class="form-field">
                     <label class="modal-label">
-                        Коментар
+                        <span class="label-text">Коментар</span>                        
                     <textarea name="user-comment" placeholder="Введіть текст" class="user-comment modal-input" rows="8"></textarea>
                     </label>
                 </div>
                 <div class="form-field checkbox-field">
                     <label class="modal-label-checkbox">
-                        <input type="checkbox">
-                        Погоджуюся з розсилкою та приймаю<a href="/">Умови договору</a>
+                        <input type="checkbox" class="checkbox">
+                        <span class="checkbox-icon"></span>
+                        <span>
+                            Погоджуюся з розсилкою та приймаю <a href="/" class="policy-link"> Умови договору</a>
+                        </span>
                     </label>
                 </div>
                 <button type="submit" class="btn btn-submit">
